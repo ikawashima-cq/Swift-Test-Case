@@ -14,6 +14,7 @@
 		C9B98F84229A602B00408082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B98F82229A602B00408082 /* LaunchScreen.storyboard */; };
 		C9B98F92229A653C00408082 /* Unit_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B98F91229A653C00408082 /* Unit_Test.swift */; };
 		C9B98FA0229A657F00408082 /* UI_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B98F9F229A657F00408082 /* UI_Test.swift */; };
+		C9E5583A229A68D000B6AA94 /* TDDSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E55839229A68D000B6AA94 /* TDDSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C9B98F9D229A657F00408082 /* UI-Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI-Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B98F9F229A657F00408082 /* UI_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI_Test.swift; sourceTree = "<group>"; };
 		C9B98FA1229A657F00408082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E55839229A68D000B6AA94 /* TDDSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				C9B98F91229A653C00408082 /* Unit_Test.swift */,
+				C9E55839229A68D000B6AA94 /* TDDSample.swift */,
 				C9B98F93229A653C00408082 /* Info.plist */,
 			);
 			path = "Unit-Test";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E5583A229A68D000B6AA94 /* TDDSample.swift in Sources */,
 				C9B98F92229A653C00408082 /* Unit_Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

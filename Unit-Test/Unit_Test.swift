@@ -22,6 +22,46 @@ class Unit_Test: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func test_XCTAssertEqual_success() {
+        XCTAssertEqual(5, 5)
+    }
+    
+    func test_XCAssertTrue_success() {
+        XCTAssertTrue(true)
+        XCTAssertFalse(false)
+    }
+    
+    func test_XCAssertNil_success() {
+        let vc: UIViewController? = nil
+        XCTAssertNil(vc)
+    }
+    
+    func test_XCAssertNotNil_success() {
+        var vc: UIViewController?
+        vc = UIViewController()
+        XCTAssertNotNil(vc)
+    }
+    
+    func test_XCTestExpectation_success() {
+        let exp = XCTestExpectation(description: "test_success")
+        DispatchQueue.global(qos: .default).async {
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 5)
+    }
+    
+    func log(text: String ) throws {
+        if text.isEmpty {
+            throw NSError(domain: "error", code: -1, userInfo: nil)
+        }
+        print(text)
+    }
+    
+    func test_XCAssertThrowError_success() {
+//        XCTAssertThrowsError(try log(text: ""))
+        XCTAssertNoThrow(try log(text: "hoge"))
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
