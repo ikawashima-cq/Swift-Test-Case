@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C9B98F7A229A602900408082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B98F79229A602900408082 /* AppDelegate.swift */; };
-		C9B98F7C229A602900408082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B98F7B229A602900408082 /* ViewController.swift */; };
 		C9B98F81229A602B00408082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B98F80229A602B00408082 /* Assets.xcassets */; };
 		C9B98F84229A602B00408082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B98F82229A602B00408082 /* LaunchScreen.storyboard */; };
 		C9B98F92229A653C00408082 /* Unit_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B98F91229A653C00408082 /* Unit_Test.swift */; };
@@ -17,7 +16,7 @@
 		C9E5583C229A750300B6AA94 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E5583B229A750300B6AA94 /* ArticleListViewController.swift */; };
 		C9E5583E229A77FA00B6AA94 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E5583D229A77FA00B6AA94 /* Article.swift */; };
 		C9E55840229A782F00B6AA94 /* ArticleListAPIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E5583F229A782F00B6AA94 /* ArticleListAPIClientProtocol.swift */; };
-		C9E55842229A7A3300B6AA94 /* ArticleLListAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E55841229A7A3300B6AA94 /* ArticleLListAPIClient.swift */; };
+		C9E55842229A7A3300B6AA94 /* ArticleListAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E55841229A7A3300B6AA94 /* ArticleListAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +39,6 @@
 /* Begin PBXFileReference section */
 		C9B98F76229A602900408082 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B98F79229A602900408082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9B98F7B229A602900408082 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9B98F80229A602B00408082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9B98F83229A602B00408082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9B98F85229A602B00408082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +52,7 @@
 		C9E5583B229A750300B6AA94 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		C9E5583D229A77FA00B6AA94 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		C9E5583F229A782F00B6AA94 /* ArticleListAPIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListAPIClientProtocol.swift; sourceTree = "<group>"; };
-		C9E55841229A7A3300B6AA94 /* ArticleLListAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleLListAPIClient.swift; sourceTree = "<group>"; };
+		C9E55841229A7A3300B6AA94 /* ArticleListAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +80,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BCCE632229A83ED004516A0 /* QiitaArticleList */ = {
+			isa = PBXGroup;
+			children = (
+				C9E5583B229A750300B6AA94 /* ArticleListViewController.swift */,
+				C9E5583D229A77FA00B6AA94 /* Article.swift */,
+				C9E5583F229A782F00B6AA94 /* ArticleListAPIClientProtocol.swift */,
+				C9E55841229A7A3300B6AA94 /* ArticleListAPIClient.swift */,
+			);
+			path = QiitaArticleList;
+			sourceTree = "<group>";
+		};
 		C9B98F6D229A602900408082 = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +114,8 @@
 		C9B98F78229A602900408082 /* SwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				5BCCE632229A83ED004516A0 /* QiitaArticleList */,
 				C9B98F79229A602900408082 /* AppDelegate.swift */,
-				C9B98F7B229A602900408082 /* ViewController.swift */,
-				C9E5583B229A750300B6AA94 /* ArticleListViewController.swift */,
-				C9E5583D229A77FA00B6AA94 /* Article.swift */,
-				C9E5583F229A782F00B6AA94 /* ArticleListAPIClientProtocol.swift */,
-				C9E55841229A7A3300B6AA94 /* ArticleLListAPIClient.swift */,
 				C9B98F80229A602B00408082 /* Assets.xcassets */,
 				C9B98F82229A602B00408082 /* LaunchScreen.storyboard */,
 				C9B98F85229A602B00408082 /* Info.plist */,
@@ -269,10 +274,9 @@
 			files = (
 				C9E5583E229A77FA00B6AA94 /* Article.swift in Sources */,
 				C9E5583C229A750300B6AA94 /* ArticleListViewController.swift in Sources */,
-				C9B98F7C229A602900408082 /* ViewController.swift in Sources */,
 				C9B98F7A229A602900408082 /* AppDelegate.swift in Sources */,
 				C9E55840229A782F00B6AA94 /* ArticleListAPIClientProtocol.swift in Sources */,
-				C9E55842229A7A3300B6AA94 /* ArticleLListAPIClient.swift in Sources */,
+				C9E55842229A7A3300B6AA94 /* ArticleListAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

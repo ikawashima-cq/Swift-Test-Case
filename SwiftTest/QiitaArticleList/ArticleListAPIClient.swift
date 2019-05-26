@@ -1,6 +1,6 @@
 import Foundation
 
-class ArticleLListAPIClient: ArticleListAPIClientProtocol {
+class ArticleListAPIClient: ArticleListAPIClientProtocol {
     
     func fetch(completion: @escaping (([Article]?) -> Void)) {
         guard let url = URL(string: "https://qiita.com/api/v2/items") else { return }
